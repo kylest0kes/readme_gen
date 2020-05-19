@@ -1,0 +1,19 @@
+{
+  "name": "readme_gen",
+  "version": "1.0.0",
+  "description": "Application that will generate a readme.md file based off user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylest0kes/readme_gen.git"
+  },
+  "author": "kylest0kes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylest0kes/readme_gen/issues"
+  },
+  "homepage": "https://github.com/kylest0kes/readme_gen#readme"
+}
