@@ -1,8 +1,8 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");  
 
-inquirer
-  .prompt([
-      {
+const promptUser = [
+    {
         type: "input",
         message: "What is your Github username?",
         name: "username"
@@ -52,5 +52,20 @@ inquirer
         message: "What does the user need to know about contributing to the repo?",
         name: "contribution"
       },
+];
 
-    ])
+
+inquirer
+    .prompt(promptUser).then(function(response) {
+        fs.writeFile("README.md", initReadMe(response), function(err) {
+            if (err) {
+                return console.log(err);
+            }
+
+        })
+
+    })
+
+function initReadMe (response) {
+    const readMe = ``
+}
