@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kylest0kes/readme_gen/issues"
   },
-  "homepage": "https://github.com/kylest0kes/readme_gen#readme"
+  "homepage": "https://github.com/kylest0kes/readme_gen#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
 }
