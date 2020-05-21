@@ -60,7 +60,7 @@ const promptUser = [
 
 inquirer
     .prompt(promptUser).then(function(response) {
-        fs.writeFile("index.html", initReadMe(response), function(err) {
+        fs.writeFile("README.md", initReadMe(response), function(err) {
             if (err) {
                 return console.log(err);
             }
@@ -72,7 +72,7 @@ inquirer
     function initReadMe(response) {
         const readMe = 
         `
-        
+
         `
         return readMe;
     }
