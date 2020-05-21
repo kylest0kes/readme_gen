@@ -20,7 +20,7 @@ const promptUser = [
       {
         type: "input",
         message: "What is your project name?",
-        name: "project-name"
+        name: "projectname"
       },
       {
         type: "input",
@@ -28,19 +28,22 @@ const promptUser = [
         name: "description"
       },
       {
-        type: "input", //dropdown with all license types
+        type: "list", 
         message: "What kind of license should your project have?",
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
         name: "license"
       },
       {
-        type: "input", //default to npm i
+        type: "input", 
         message: "What command should be run to install dependencies?",
-        name: "install-command"
+        default: "npm i",
+        name: "installcommand"
       },
       {
-        type: "input", //default to npm test
+        type: "input", 
         message: "What command should be run to run tests?",
-        name: "test-command"
+        default: "npm test",
+        name: "testcommand"
       },
       {
         type: "input", 
@@ -57,7 +60,7 @@ const promptUser = [
 
 inquirer
     .prompt(promptUser).then(function(response) {
-        fs.writeFile("README.md", initReadMe(response), function(err) {
+        fs.writeFile("index.html", initReadMe(response), function(err) {
             if (err) {
                 return console.log(err);
             }
@@ -66,6 +69,10 @@ inquirer
 
     })
 
-function initReadMe (response) {
-    const readMe = ``
-}
+    function initReadMe(response) {
+        const readMe = 
+        `
+        
+        `
+        return readMe;
+    }
