@@ -1,4 +1,3 @@
-
 const prompts = [
     {
         type: "input",
@@ -57,5 +56,4 @@ const prompts = [
 
 module.exports = {
     prompts: prompts,
-    //inquirer: inquirer
 }
